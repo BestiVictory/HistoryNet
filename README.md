@@ -27,7 +27,7 @@ ACM International Conference on Multimedia (ACM MM), 2021
    pip install -r requirements.txt
 ```
 ## Model
-1. Download it from [BaiduCloud](https://pan.baidu.com/s/1KQnVA77EBF3huCwG4dVsHQ)(code:j0gi)  
+1. Download it from [BaiduCloud](https://pan.baidu.com/s/1KQnVA77EBF3huCwG4dVsHQ) (code: j0gi)  
 2. Now the model should place in `MODEL`. 
 
 ## Colorize Images
