@@ -26,6 +26,10 @@ ACM International Conference on Multimedia (ACM MM), 2021
 ```
    pip install -r requirements.txt
 ```
+## Dataset
+MHMD can be download [here](http;//github.com/BestiVictory/MHMD).
+You can also choose your own dataset.
+
 ## Model
 1. Download it from [BaiduCloud](https://pan.baidu.com/s/1KQnVA77EBF3huCwG4dVsHQ) (code: j0gi)  
 2. Now the model should place in `MODEL`. 
@@ -38,6 +42,9 @@ python HistoryNetPrint.py
 All the colorized results would save in `RESULTS` folder.
 
 Note: You can update `config.py` to change the paths of model, test and result folder. 
+
+## Train 
+Place the dataset in the `DATASET` folder under the root directory.
 
 ## Citation
 If you find our code/models useful, please consider citing our paper: 
