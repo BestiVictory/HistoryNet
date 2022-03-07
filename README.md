@@ -27,7 +27,7 @@ ACM International Conference on Multimedia (ACM MM), 2021
    pip install -r requirements.txt
 ```
 ## Dataset
-MHMD can be download [here](http;//github.com/BestiVictory/MHMD).
+MHMD can be download [here](https://github.com/BestiVictory/MHMD).
 You can also choose your own dataset.
 
 ## Model
