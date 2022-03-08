@@ -34,17 +34,45 @@ You can also choose your own dataset.
 1. Download it from [BaiduCloud](https://pan.baidu.com/s/1KQnVA77EBF3huCwG4dVsHQ) (code: j0gi)  
 2. Now the model should place in `MODEL`. 
 
-## Colorize Images
-Enter `HistoryNet/SOURCE`. Please follow the command below to colorize all the images in `TEST` folder.
+## Parameters
+If you want to colorize images, you can update `TEST_DIR` and the colorization images are in `RESULT_DIR`. And `PRETRAINED` is the path of colorization model. If you want to train all the time, you need to update `TRAIN_DATA` and `TEST_DATA`. `TRAIN_DATA` is the path of training dataset and `TEST_DATA` is the path of testing dataset.
 ```
+import os
+
+# DIRECTORY INFORMATION
+TEST_NAME ="HistoryNet"
+SIGN_NAME = "sign.txt"
+ROOT_DIR = os.path.abspath('../')
+OUT_DIR = os.path.join(ROOT_DIR, 'RESULT/'+TEST_NAME+'/')
+MODEL_DIR = os.path.join(ROOT_DIR, 'MODEL/'+TEST_NAME+'/')
+LOG_DIR = os.path.join(ROOT_DIR, 'LOGS/'+TEST_NAME+'/')
+
+TRAIN_DATA = os.path.join(ROOT_DIR, 'DATASET/'+'train')
+TEST_DATA = os.path.join(ROOT_DIR, 'DATASET/'+'test')
+
+TEST_NAME_2 = "HistoryNet_test"
+TEST_DIR = os.path.join(ROOT_DIR, 'TEST/'+TEST_NAME_2+'/')
+RESULT_DIR = os.path.join(ROOT_DIR, 'RESULT/'+TEST_NAME_2+'/')
+
+# DATA INFORMATION
+IMAGE_SIZE = 224
+BATCH_SIZE = 16
+
+# TRAINING INFORMATION
+PRETRAINED = "my_model_colorizationEpoch7.h5"
+NUM_EPOCHS = 8
+```
+
+## Colorize Images
+```
+cd HistoryNet
 python HistoryNetPrint.py
 ```
-All the colorized results would save in `RESULTS` folder.
-
-Note: You can update `config.py` to change the paths of model, test and result folder. 
-
 ## Train 
-Place the dataset in the `DATASET` folder under the root directory.
+```
+cd HistoryNet
+python HistoryNet.py
+```
 
 ## Citation
 If you find our code/models useful, please consider citing our paper: 
