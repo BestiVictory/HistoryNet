@@ -7,10 +7,14 @@ In industry, there exist plenty of scenarios where old gray photos need to be au
 Xin Jin, Zhonglan Li, Ke Liu, Dongqing Zou, Xiaodong Li, Xingfan Zhu, Ziyin Zhou, Qilong Sun, Qingyu Liu  
 ACM International Conference on Multimedia (ACM MM), 2021
 
-## Prerequisites
-* Python3  
-* OpenCV-Python  
-* Tensorflow  
+## Prerequisites 
+* keras==2.2.4
+* numpy==1.15.4
+* opencv-python==4.1.0.25
+* tensorflow==1.14.0
+* tensorflow-gpu==1.14.0
+* h5py==2.10.0
+* python==3.6.0
 
 ## Getting Started
 1. Clone this repo:  
