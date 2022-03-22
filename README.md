@@ -69,12 +69,12 @@ NUM_EPOCHS = 8
 
 ## Colorize Images
 ```
-cd HistoryNet
+cd SOURCE_HistoryNet
 python colorization.py
 ```
 ## Train 
 ```
-cd HistoryNet
+cd SOURCE_HistoryNet
 python HistoryNet.py
 ```
 
