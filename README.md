@@ -70,7 +70,7 @@ NUM_EPOCHS = 8
 ## Colorize Images
 ```
 cd HistoryNet
-python HistoryNetPrint.py
+python colorization.py
 ```
 ## Train 
 ```
