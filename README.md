@@ -20,7 +20,7 @@ ACM International Conference on Multimedia (ACM MM), 2021
 1. Clone this repo:  
 ```
    git clone https://github.com/BestiVictory/HistoryNet.git  
-   cd HistoryNet
+   cd SOURCE_HistoryNet
 ``` 
 2. Create a Virtual Environment  
 ```
