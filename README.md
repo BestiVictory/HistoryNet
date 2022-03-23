@@ -36,7 +36,7 @@ You can also choose your own dataset.
 
 ## Model
 1. Download it from [BaiduCloud](https://pan.baidu.com/s/1KQnVA77EBF3huCwG4dVsHQ) (code: j0gi)  
-2. Now the model should place in `MODEL`. 
+2. Now the model should be placed in `MODEL` in the root directory.
 
 ## Parameters
 If you want to colorize images, you can update `TEST_DIR` and the colorization images are in `RESULT_DIR`. And `PRETRAINED` is the path of colorization model. If you want to train all the time, you need to update `TRAIN_DATA` and `TEST_DATA`. `TRAIN_DATA` is the path of training dataset and `TEST_DATA` is the path of testing dataset.
