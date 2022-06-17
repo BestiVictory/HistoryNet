@@ -1,6 +1,0 @@
-keras==2.2.4
-numpy==1.15.4
-opencv-python==4.1.0.25
-tensorflow==1.14.0
-tensorflow-gpu==1.14.0
-h5py==2.10.0
