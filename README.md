@@ -25,6 +25,7 @@ ACM International Conference on Multimedia (ACM MM), 2021
 2. Create a Virtual Environment  
 ```
    conda create -n HistoryNet python=3.6 
+   conda activate HistoryNet
 ```
 3. Install all the dependencies  
 ```
