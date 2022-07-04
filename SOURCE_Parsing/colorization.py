@@ -6,6 +6,7 @@ import cv2
 import dataClass as data
 from keras import applications
 from keras.models import load_model
+from keras.backend.tensorflow_backend import set_session
 
 os.environ["CUDA_VISIBLE_DEVICES"] = config.GPU_ID
 config_1 = tf.ConfigProto()
