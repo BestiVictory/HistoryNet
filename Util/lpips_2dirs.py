@@ -23,10 +23,13 @@ files = os.listdir(opt.dir0)
 lenth = len(files)
 avarage = 0
 for file in files:
-	if(os.path.exists(os.path.join(opt.dir1,file))):
+	#print(file)
+	file_res = file.split(".jpg")[0]+"_reconstructed.jpg" 
+	#print(file_res)
+	if(os.path.exists(os.path.join(opt.dir1,file_res))):
 		# Load images
 		img0 = lpips.im2tensor(lpips.load_image(os.path.join(opt.dir0,file))) # RGB image from [-1,1]
-		img1 = lpips.im2tensor(lpips.load_image(os.path.join(opt.dir1,file)))
+		img1 = lpips.im2tensor(lpips.load_image(os.path.join(opt.dir1,file_res)))
 
 		if(opt.use_gpu):
 			img0 = img0.cuda()
@@ -39,4 +42,5 @@ for file in files:
 		f.writelines('%s: %.6f\n'%(file,dist01))
 print(avarage.item())
 print(" ----------  LPIPS loss =", "{:.8f}------------------".format(avarage.item()/lenth))
+
 f.close()
